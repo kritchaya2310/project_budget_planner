@@ -44,6 +44,7 @@ Finally, it inserts the data (difference, saving, and spent) into the database.
 10.Start the Program:
 
 The function start() is called to start the program. It takes input from the user for their name, monthly budget, and savings. It also checks if the savings are greater than the budget or not. If yes, it prints a message saying that savings cannot be greater than the budget and prompts the user to enter the input again.
+
 ![Logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
 ![Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png?20220821155029)
 
