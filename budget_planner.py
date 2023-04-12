@@ -30,10 +30,10 @@ def need_wants():
         need, priority, price = (map(str, input().split()))
         need_d[int(priority)] = [need, int(price)]
 
-    print("\n\n***Please enter the list of your needs***")
+    print("\n\n***Please enter the list of your wants***")
     print("\n Don't forget to provide the price and priority value")
     print("\n The Priority will be marked on a scale of 0-10, 10 means it has the hightest priority")
-    size = int(input("\n\n Enter the number of needs you have = "))
+    size = int(input("\n\n Enter the number of wants you have = "))
     for i in range(1, size+1):
         print("Enter the wants:\n")
         need, priority, cost = (map(str, input().split()))
