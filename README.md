@@ -1,4 +1,4 @@
-*WORKFLOW
+*WORKFLOW*
 
 1.The code starts by importing the required modules: time and mysql.connector. Then, it tries to connect to the MySQL database with the provided credentials.
 
