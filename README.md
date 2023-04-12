@@ -1,4 +1,5 @@
-*WORKFLOW*
+*WORKFLOW
+
 1.The code starts by importing the required modules: time and mysql.connector. Then, it tries to connect to the MySQL database with the provided credentials.
 
 2.If the connection is successful, it prints "Connected successfully to the database." Otherwise, it prints "Failed to connect to the database."
