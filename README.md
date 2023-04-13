@@ -1,49 +1,30 @@
+# Monthly Budget Planner
+This is a simple Monthly Budget Planner program written in Python using MySQL as the database to store the data. The program is designed to take in a user's monthly budget and help them plan their expenses accordingly. The program prompts the user to enter the list of their needs and wants and then calculates the remaining budget after fulfilling those needs and wants. It also saves the data to the MySQL database for future reference.
 
-# Project Budger Planner
-
-WORKFLOW:
-
-This project is a budget management program that connects to a MySQL database and performs the following tasks:
-
-1.Import Modules and Connect to the Database:
-
-The code starts by importing the required modules: time and mysql.connector. Then, it tries to connect to the MySQL database with the provided credentials.
-
-2.Check Connection Status:
-
-If the connection is successful, it prints "Connected successfully to the database." Otherwise, it prints "Failed to connect to the database."
-
-3.Initialize Variables:
-
-Next, it defines two empty dictionaries (need_d and want_d) to store the user's needs and wants. It also initializes two variables (saving and budget) to 0.
-
-4.Get User Inputs:
-
-The function need_wants() is called to get the user's needs and wants. It takes input from the user for the name, priority, and price of each need and want and stores them in the dictionaries.
-
-5.Sort Dictionaries:
-
-The dictionaries need_d and want_d are sorted in descending order of priority to get the list of needs and wants in priority order.
-
-6.Calculate Monthly Budget:
-
-The function calculation() is called to calculate the monthly budget. It takes the difference between the budget and the savings and the username as input.
-
-7.Print List of Needs and Wants:
-
-The function prints the list of needs and wants along with their priorities and prices. It also inserts the data into the database.
-
-8.Check Budget Constraints:
-
-For each need and want, the function checks if it can be fulfilled within the available budget. If yes, it deducts the price of the need or want from the available budget and adds it to the spent amount. If not, it prints a message saying that the need or want cannot be fulfilled within the available budget.
-
-9.Insert Data into the Database:
-
-Finally, it inserts the data (difference, saving, and spent) into the database.
-
-10.Start the Program:
-
-The function start() is called to start the program. It takes input from the user for their name, monthly budget, and savings. It also checks if the savings are greater than the budget or not. If yes, it prints a message saying that savings cannot be greater than the budget and prompts the user to enter the input again.
+## Prerequisites
+- Python 3.x
+- MySQL
+## Getting Started
+1. Clone the repository to your local machine.
+2. Open the budget_planner.py file in a text editor.
+3. Replace the host, user, password, and database values in the mysql.connector.connect() function with your own database credentials.
+4. Open the terminal or command prompt and navigate to the project directory.
+5. Run the following command to install the required packages:
+```py
+  pip install mysql-connector-python
+```
+6. Run the following command to start the program:
+```py
+  python budget_planner.py
+```
+## How to use the program
+1. When you run the program, you will be prompted to enter your name and monthly budget.
+2. Next, you will be prompted to enter the list of your needs and wants along with their priority and price.
+3. The program will then calculate the remaining budget after fulfilling those needs and wants and save the data to the database.
+4. You can view the data in the database by running the following command:
+```sql
+  SELECT * FROM budget_planner;
+```
 
 ![Logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
 ![Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png?20220821155029)
